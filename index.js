@@ -11,7 +11,10 @@ const path = require('path')
 const fs = require('fs') 
 
 
-app.use(cors()) 
+app.use(cors({
+  origin:"https://memory-vault-frontend-o.vercel.app",
+  credentials:true
+})) 
 app.use(express.json())
 app.use('/api/users',authRouter)
 app.use('/api/users/task',taskRouter)
