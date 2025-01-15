@@ -12,7 +12,7 @@ const fs = require('fs')
 
 
 app.use(cors({
-  origin:"https://memory-vault-frontend-o.vercel.app/",
+  origin:"https://memory-vault-frontend-o.vercel.app",
   methods:['POST','GET'],
   credentials:true
 })) 
